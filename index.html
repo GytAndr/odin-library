@@ -5,26 +5,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="/script.js" defer></script>
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/main.css" />
 		<title>Library</title>
 	</head>
 	<body>
-		<div class="wrap">
-			<div class="input-wrap">
-				<label for="title">Book Title</label><input type="text" id="title" />
+		<div class="container center">
+			<div id="hide" class="form center">
+				<!-- add remove id with js for hide -->
+				<div class="input-wrap">
+					<label for="title">Book Title</label><input type="text" id="title" />
+				</div>
+				<div class="input-wrap">
+					<label for="author">Book Author</label
+					><input type="text" id="author" />
+				</div>
+				<div class="input-wrap">
+					<label for="pages">No of pages</label><input type="text" id="pages" />
+				</div>
+				<div class="input-wrap">
+					<label for="read">Reading status</label
+					><input type="text" id="read" />
+				</div>
+				<button id="submit">Submit Book</button>
+				<br />
+				<div id="list"></div>
 			</div>
-			<div class="input-wrap">
-				<label for="author">Book Author</label><input type="text" id="author" />
-			</div>
-			<div class="input-wrap">
-				<label for="pages">No of pages</label><input type="text" id="pages" />
-			</div>
-			<div class="input-wrap">
-				<label for="read">Reading status</label><input type="text" id="read" />
-			</div>
-			<button id="submit">Submit Book</button>
-			<br />
-			<div id="list"></div>
 		</div>
 	</body>
 </html>

@@ -18,6 +18,14 @@ function resetInput() {
 	read.value = "";
 }
 
+function printArray() {
+	let list = document.getElementById("list");
+	let p = document.createElement("p");
+	for (let index = 0; index < myLibrary.length; index++) {
+		p.innerText = `${myLibrary[index].title} by ${myLibrary[index].author}, ${myLibrary[index].pages} pages, ${myLibrary[index].read}`;
+		list.appendChild(p);
+	}
+}
 //function pushes newly created Book obj into array.
 function addBookToLibrary() {
 	//get input values
@@ -32,12 +40,4 @@ function addBookToLibrary() {
 	//reset input fields
 	resetInput();
 	printArray();
-}
-function printArray() {
-	let list = document.getElementById("list");
-	let p = document.createElement("p");
-	for (let index = 0; index < myLibrary.length; index++) {
-		p.innerText = `${myLibrary[index].title} by ${myLibrary[index].author}, ${myLibrary[index].pages} pages, ${myLibrary[index].read}`;
-		list.appendChild(p);
-	}
 }
