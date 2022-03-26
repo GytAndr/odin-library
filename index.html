@@ -8,9 +8,15 @@
 		<link rel="stylesheet" href="/main.css" />
 		<title>Library</title>
 	</head>
-	<body>
+	<body class="center">
+		<div class="container">
+			<button id="unhide">Press to add book</button>
+			<div id="list">
+				<table></table>
+			</div>
+		</div>
 		<div class="container center">
-			<div id="hide" class="form center">
+			<div id="form" style="display: none">
 				<!-- add remove id with js for hide -->
 				<div class="input-wrap">
 					<label for="title">Book Title</label><input type="text" id="title" />
@@ -27,8 +33,6 @@
 					><input type="text" id="read" />
 				</div>
 				<button id="submit">Submit Book</button>
-				<br />
-				<div id="list"></div>
 			</div>
 		</div>
 	</body>

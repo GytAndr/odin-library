@@ -1,5 +1,5 @@
 document.getElementById("submit").addEventListener("click", addBookToLibrary);
-
+document.getElementById("unhide").addEventListener("click", unhideForm);
 //library array that will be looped and displayed on screen.
 let myLibrary = [];
 
@@ -17,7 +17,7 @@ function resetInput() {
 	pages.value = "";
 	read.value = "";
 }
-
+//displays library contents
 function printArray() {
 	let list = document.getElementById("list");
 	let p = document.createElement("p");
@@ -26,6 +26,15 @@ function printArray() {
 		list.appendChild(p);
 	}
 }
+//hide form
+function hideForm() {
+	document.getElementById("form").style.display = "none"; //this hides
+}
+//unhide form
+function unhideForm() {
+	document.getElementById("form").style.display = ""; //this unhides
+}
+
 //function pushes newly created Book obj into array.
 function addBookToLibrary() {
 	//get input values
@@ -39,5 +48,6 @@ function addBookToLibrary() {
 	myLibrary.push(thing);
 	//reset input fields
 	resetInput();
+	hideForm();
 	printArray();
 }

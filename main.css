@@ -1,11 +1,25 @@
-.form {
+#form {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aquamarine;
 }
 
-.form .input-wrap {
+#form .input-wrap {
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,16 +30,12 @@
           flex-direction: column;
 }
 
-.form .input-wrap input {
+#form .input-wrap input {
   width: 150px;
 }
 
-.form #submit {
+#form #submit {
   width: 160px;
-}
-
-#hide {
-  display: none;
 }
 
 .center {
@@ -38,5 +48,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#unhide {
+  padding: 12px 28px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
